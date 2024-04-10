@@ -1,11 +1,11 @@
-import CatogoryItem from "../category-item/category-item.component"
+import NavigationItem from '../navigation-item/navigation-item.component'
 import './navigation.styles.scss'
 
-const Navigation = ({categories}) => {
+const Navigation = ({ categories }) => {
     return (
         <div className="categories-container">
             {categories.map((category) => (
-                <CatogoryItem key={category.id} category={category} />
+                <NavigationItem key={category.id} category={category} />
             ))}
         </div>
     )
